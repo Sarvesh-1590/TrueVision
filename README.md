@@ -1,88 +1,101 @@
-🧠 TrueVision
+TrueVision – Deepfake Detection System
 
-A deepfake detection system using PyTorch and EfficientNet-B0, with a web interface for real-time image and video analysis.
+TrueVision is a full-stack AI application designed to detect manipulated media in both images and videos. The system leverages deep learning and computer vision techniques to identify deepfake content and presents results through an intuitive web-based dashboard for real-time analysis.
 
-🌟 Features
+This project focuses on media authenticity, AI security, and ethical AI, making it suitable for applications in digital forensics, cybersecurity, and content verification.
 
-EfficientNet-B0 deep learning model for real/fake classification
+Features
 
-Supports images (.jpg, .png) and videos (.mp4, .mov)
+Detection of deepfake and manipulated images and videos
 
-Interactive Gradio web interface
+Deep learning–based classification and inference
 
-Real-time video frame analysis
+Real-time result visualization through a web interface
 
-PyTorch Lightning training pipeline
+Modular and configurable ML pipeline
 
-Model export: PyTorch (.pt) & ONNX
+Scalable training using PyTorch Lightning
 
-🚀 Quick Start
-Prerequisites
+Tech Stack
+Languages
 
-Python 3.8+
+Python
 
-CUDA GPU (optional, recommended for training)
+Java
 
-Usage
+Deep Learning & AI
 
-Web App:
-
-python web-app.py
-
-
-Command-line Classification:
-
-python classify.py --image path/to/image.jpg
-
-
-Video Analysis:
-
-python inference/video_inference.py --video path/to/video.mp4
-
-📁 Project Structure
-├── web-app.py            # Web interface
-├── main_trainer.py       # Training script
-├── classify.py           # Image classification
-├── config.yaml           # Training config
-├── models/               # Model weights
-├── data/                 # Datasets
-├── tools/                # Dataset preparation utilities
-└── inference/            # Video & ONNX processing
-
-🛠️ Model Details
-
-Backbone: EfficientNet-B0
-
-Classifier: Binary (Real/Fake)
-
-Input: 224×224 RGB images
-
-Output: Confidence scores
-
-🤝 Contributing
-
-Fork the repo
-
-Create a branch: git checkout -b feature-name
-
-Commit: git commit -m "Description"
-
-Push: git push origin feature-name
-
-Open a Pull Request
-
-🙏 Acknowledgments
-
-EfficientNet by Google Research
+PyTorch
 
 PyTorch Lightning
 
-Gradio for web interface
+Computer Vision
 
-This version:
+Image and video deepfake detection models
 
-Cuts down dataset details (keep links separately if needed)
+Backend
 
-Removes repetitive installation/training instructions
+Java-based REST services
 
-Focuses on usage, structure, and contributions
+Frontend
+
+Web-based dashboard / GUI for media upload and analysis
+
+Data & Configuration
+
+Custom image and video datasets
+
+YAML-based configuration (config.yaml)
+
+Inference & Evaluation
+
+Model inference and classification (classify.py)
+
+Performance evaluation (realeval.py)
+
+Tools & DevOps
+
+Git & GitHub
+
+pip and requirements.txt
+
+Virtual environments
+
+Project Structure
+├── datasets/            # Training and evaluation datasets
+├── models/              # Deep learning model architectures
+├── lightning_modules/   # PyTorch Lightning modules
+├── inference/           # Inference pipeline
+├── tools/               # Utility scripts
+├── classify.py          # Media classification script
+├── main_trainer.py      # Model training pipeline
+├── realeval.py          # Evaluation script
+├── web-app.py           # Web-based application
+├── config.yaml          # Configuration file
+├── requirements.txt     # Python dependencies
+└── README.md
+
+Installation
+git clone <repository-url>
+cd TrueVision
+pip install -r requirements.txt
+
+Usage
+
+Train the model using main_trainer.py
+
+Run inference using classify.py
+
+Launch the web interface using web-app.py
+
+Modify parameters via config.yaml
+
+Applications
+
+Deepfake and media forgery detection
+
+Digital forensics
+
+Cybersecurity and AI safety
+
+Content authenticity verification

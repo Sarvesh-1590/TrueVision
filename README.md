@@ -2,14 +2,14 @@ TrueVision – Deepfake Detection System
 TrueVision is a full-stack AI application designed to detect manipulated media in both images and videos. The system leverages deep learning and computer vision techniques to identify deepfake content and presents results through an intuitive web-based dashboard for real-time analysis.
 This project focuses on media authenticity, AI security, and ethical AI, making it suitable for applications in digital forensics, cybersecurity, and content verification.
 
-Features
+Features:
 Detection of deepfake and manipulated images and videos
 Deep learning–based classification and inference
 Real-time result visualization through a web interface
 Modular and configurable ML pipeline
 Scalable training using PyTorch Lightning
 
-Tech Stack
+Tech Stack:
 Languages
 Python
 Java
@@ -37,7 +37,7 @@ Git & GitHub
 pip and requirements.txt
 Virtual environments
 
-Project Structure
+Project Structure:
 ├── datasets/            # Training and evaluation datasets
 ├── models/              # Deep learning model architectures
 ├── lightning_modules/   # PyTorch Lightning modules
@@ -51,18 +51,18 @@ Project Structure
 ├── requirements.txt     # Python dependencies
 └── README.md
 
-Installation
+Installation:
 git clone <repository-url>
 cd TrueVision
 pip install -r requirements.txt
 
-Usage
+Usage:
 Train the model using main_trainer.py
 Run inference using classify.p
 Launch the web interface using web-app.py
 Modify parameters via config.yaml
 
-Applications
+Applications:
 Deepfake and media forgery detection
 Digital forensics
 Cybersecurity and AI safety
